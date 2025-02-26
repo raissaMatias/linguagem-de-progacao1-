@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ReajusteSalarial {
+    public static void main(String[] args) {
+        // Criação do objeto Scanner para ler as entradas do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o salário atual
+        System.out.print("informe o salário mensal atual do funcionário: ");
+        double salarioAtual = scanner.nextDouble();
+
+        // Solicita o percentual de reajuste
+        System.out.print("Digite o percentual de reajuste (%): ");
+        double percentualReajuste = scanner.nextDouble();
+
+        // calculo do valor do reajuste
+        double aumento = salarioAtual * (percentualReajuste / 100);
+
+        // Calculo do novo salário
+        double novoSalario = salarioAtual + aumento;
+
+        // novo salário
+        System.out.printf("O novo salário do funcionário será: R$ %.2f\n", novoSalario);
+
+        scanner.close();
+    }
+}
+TESTE DE MESA 
+1) Digite o salário mensal atual do funcionário: 3000
+Digite o percentual de reajuste (%): 2
+O novo salário do funcionário será: R$ 3060
