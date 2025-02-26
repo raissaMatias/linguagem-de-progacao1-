@@ -1,3 +1,4 @@
+```java
 import java.util.Scanner; // a classe scanner está dentro do pacote java.util e é usado para capturar a entrada do usuário
 
 public class DuracaoJogo {
@@ -25,3 +26,5 @@ public class DuracaoJogo {
         System.out.println("o jogo teve duração de " + duracao + " horas.");
     }
 }
+
+```
