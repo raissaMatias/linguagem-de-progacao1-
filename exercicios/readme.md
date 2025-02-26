@@ -28,3 +28,12 @@ public class DuracaoJogo {
 }
 
 ```
+TESTE DE MESA EXERCICIO 14:
+1) QUANDO O JOGO TERMINA NO MESMO DIA:
+   horaFim: 12
+   horaInicio: 18
+   o jogo durou 6 horas
+1) QUANDO O JOGO TERMINA NO DIA SEGUINTE:
+   horaInicio: 17
+   horaFim: 3
+   o jogo durou 10 horas
