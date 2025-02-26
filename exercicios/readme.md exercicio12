@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class MaiorValor {
+    public static void main(String[] args) {
+        // Criação do objeto Scanner para ler as entradas do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        int valor1, valor2;
+
+        // Solicitar os valores até que sejam diferentes
+        do {
+            System.out.print("qual o primeiro valor: ");
+            valor1 = scanner.nextInt();
+
+            System.out.print("qual o segundo valor: ");
+            valor2 = scanner.nextInt();
+
+            if (valor1 == valor2) {
+                System.out.println("Os valores não podem ser iguais. Tente novamente.");
+            } // mensagem de ERRO!!!
+
+        } while (valor1 == valor2); // Repete enquanto os valores forem iguais
+
+        // Comparar os valores e exibir o maior
+        if (valor1 > valor2) {
+            System.out.println("O maior valor é: " + valor1);
+        } else {
+            System.out.println("O maior valor é: " + valor2);
+        }
+        scanner.close();
+    }
+}
+TESTE DE MESA:
+1) valor1: 55
+   valor2: 22
+   O maior valor é: 55
+2) valor1: 55
+   valor2: 55
+Os valores não podem ser iguais. Tente novamente.
