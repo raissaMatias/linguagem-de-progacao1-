@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class VerificaAprovacao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // recebe as notas das avaliações
+        System.out.print("informe a nota da 1ª avaliação: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("informe a nota da 2ª avaliação: ");
+        double nota2 = scanner.nextDouble();
+
+        // calculo da média aritmética
+        double media = (nota1 + nota2) / 2;
+
+        // resultado da média calculada
+        System.out.printf("Média do aluno: %.2f%n", media);
+
+        // Verifica se o aluno foi aprovado ou reprovado
+        if (media >= 6) {
+            System.out.println("Aluno APROVADO!");
+        } else {
+            System.out.println("Aluno REPROVADO!");
+        }
+
+        scanner.close();
+    }
+TESTE DE MESA
+1) nota1: 8
+   nota2: 5
+   saída: Média do aluno: 6.50
+   Aluno APROVADO!
+2) nota1: 8
+   nota2: 4
+   saída: Média do aluno: 6.00
+   Aluno APROVADO!
+3) nota1: 8
+   nota2: 3
+   saída: Média do aluno: 5.50
+   Aluno REPROVADO!
