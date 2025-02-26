@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class VerificaValor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // solicita a entrada de um número
+        System.out.print("informe um valor: ");
+        double valor = scanner.nextDouble();
+
+        // Verifica se é maior que 10 e exibe a mensagem correspondente
+        if (valor > 10) {
+            System.out.println("o número é maior que 10!");
+        } else {
+            System.out.println("o número NÃO É MAIOR que 10!");
+        }
+
+        scanner.close();
+}
+
+}
+TESTE DE MESA 
+1) informe um valor: 9
+o número NÃO É MAIOR que 10!
+2) informe um valor: 11
+o número é maior que 10!
