@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class CustoCarro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // solicita o custo de fábrica do carro
+        System.out.print("qual o custo de fábrica do carro: ");
+        double custoFabrica = scanner.nextDouble();
+
+        // definicão da porcentagem (distribuidor e impostos)
+        double percentualDistribuidor = 0.28; // 28%
+        double percentualImpostos = 0.45; // 45%
+
+        // calculo dos valores adicionais
+        double valorDistribuidor = custoFabrica * percentualDistribuidor;
+        double valorImpostos = custoFabrica * percentualImpostos;
+
+        // calculo do custo final
+        double custoFinal = custoFabrica + valorDistribuidor + valorImpostos;
+
+        // fornece os resultados
+        System.out.printf("O custo final ao consumidor é: R$ %.2f%n", custoFinal);
+
+        scanner.close();
+    }
+}
+TESTE DE MESA EXERCICIO 4
+1) qual o custo de fábrica do carro: 50.000
+Distribuidor: 50.000 * 0.28 = R$ 14.000
+Impostos: 50.000 * 0.45 = R$ 22.500
+Custo final: 50.000 + 14.000 + 22.500 = R$ 86.500
+O custo final ao consumidor é: R$ 86.500
