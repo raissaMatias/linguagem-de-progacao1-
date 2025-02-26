@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class SalarioVendedor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // solicita informacao do usuário 
+        System.out.print("informe o salário fixo do vendedor: ");
+        double salarioFixo = scanner.nextDouble();
+
+        System.out.print("informe o número de carros vendidos: ");
+        int carrosVendidos = scanner.nextInt();
+
+        System.out.print("Digite o valor total das vendas: ");
+        double valorTotalVendas = scanner.nextDouble();
+
+        System.out.print("Digite o valor recebido por carro vendido: ");
+        double valorPorCarro = scanner.nextDouble();
+
+        // calculo de comissao (carros vendidos)
+        double comissaoPorCarros = carrosVendidos * valorPorCarro;
+
+        // calcula a comissão de 5% em relação o valor total das vendas
+        double comissaoSobreVendas = valorTotalVendas * 0.05;
+
+        // salário final
+        double salarioFinal = salarioFixo + comissaoPorCarros + comissaoSobreVendas;
+
+        // resultado
+        System.out.printf("O salário final do vendedor é: R$ %.2f%n", salarioFinal);
+
+        scanner.close();
+    }
+}
+TESTE DE MESA EXERCICIO 
+1) Digite o salário fixo do vendedor: 1500
+Digite o nÚmero de carros vendidos: 20
+Digite o valor total das vendas: 150000
+Digite o valor recebido por carro vendido: 350
+O salário final do vendedor é: R$ 16000.00
