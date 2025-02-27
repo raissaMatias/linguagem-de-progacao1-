@@ -1,0 +1,22 @@
+public class DespesaTrimestral {
+    public static void main(String[] args) {
+        
+        // Definindo os valores gastos em cada mês
+        double janeiro = 15000;  // Gasto de janeiro
+        double fevereiro = 23000; // Gasto de fevereiro
+        double março = 17000;    // Gasto de março
+
+        // calculo do gasto total do trimestre
+        double gastoTotal = janeiro + fevereiro + março;
+
+        // calculo da média mensal de gastos
+        double mediaMensal = gastoTotal / 3;
+
+        // exibe os resultados
+        System.out.println("Despesa total do trimestre: R$ " + gastoTotal);
+        System.out.println("Média mensal de gastos: R$ " + mediaMensal);
+    }
+}
+TESTE DE MESA
+1) Despesa total no trimestre: R$ 55000.0
+Média mensal de gastos: R$ 18333.33
