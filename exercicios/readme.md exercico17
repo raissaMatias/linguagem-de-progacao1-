@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class CalcularMediaLP1 {
+    public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar as notas ao usuário
+        System.out.print("Digite a nota da Prova 1 (P1): ");
+        double P1 = scanner.nextDouble();
+
+        System.out.print("Digite a nota da Avaliação 1 (E1): ");
+        double E1 = scanner.nextDouble();
+
+        System.out.print("Digite a nota da Avaliação 2 (E2): ");
+        double E2 = scanner.nextDouble();
+
+        System.out.print("Digite a nota do API: ");
+        double API = scanner.nextDouble();
+
+        System.out.print("Digite o valor de X: ");
+        double X = scanner.nextDouble();
+
+        System.out.print("Digite a nota de Submissão (SUB): ");
+        double SUB = scanner.nextDouble();
+
+        // Calculando a média de LP1 conforme a fórmula fornecida
+        double notaParcial = P1 * 0.6 + ((E1 + E2) / 2) * 0.4; // Parte da média com P1, E1 e E2
+        double parte1 = notaParcial * 0.5;
+
+        // Cálculo da parte da fórmula com max e API
+        double parte2 = Math.max(notaParcial - 5.9, 0) / (notaParcial - 5.9) * (API * 0.5);
+
+        // Cálculo final
+        double mediaLP1 = parte1 + parte2 + X + (SUB * 0.3);
+
+        // Exibindo o resultado
+        System.out.printf("A média de LP1 do aluno é: %.2f\n", mediaLP1);
+
+        scanner.close();
+    }
+}
+TESTE DE MESA 
+1) Digite a nota da P1: 8
+Digite a nota da E1: 8
+Digite a nota da E2: 7
+Digite a nota da API: 7
+Digite a nota de X: 1
+Digite a nota da SUB: 8
+A m?dia final de LP1 ?: 7.30
