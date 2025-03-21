@@ -11,4 +11,7 @@ https://www.lucidchart.com/
 3. Implementar, usando a Linguagem Java, as classes modeladas no item 2.
 4. Criar uma classe TestaClasse, contendo: método main,  um objeto de cada classe para teste.  Nesta classe, evocar, pelo menos, dois métodos de cada classe. Além disso, a classe TestaClasse deve conter um menu em que fica em loop, apresentando as opções até que o usuário deseje sair.
 5. Observar a figura a seguir e implementar uma classe contendo as operações de soma, subtração, multiplicação e divisão. A classe deverá conter os atributos numerador e denominador. O resultado deve ser apresentado no formato de fração simplificada.
-6. Fazer o teste de mesa para o item 5, usando os exemplos da imagem mostrada anteriormente.
+
+![image](https://github.com/user-attachments/assets/d764fb2c-733a-4688-b1cc-5d1367abd70a)
+  
+7. Fazer o teste de mesa para o item 5, usando os exemplos da imagem mostrada anteriormente.
