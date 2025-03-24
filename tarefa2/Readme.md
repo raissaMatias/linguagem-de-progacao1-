@@ -1,4 +1,4 @@
-# Tarefa2 - Classes, métodos, atributos e  24/3
+# Tarefa2 - Classes, métodos, atributos e laços de repetição  24/3
 # exercício 1
 ![image](https://github.com/user-attachments/assets/26ed13d3-9aae-426b-8a19-ee06cfb04514)
 
