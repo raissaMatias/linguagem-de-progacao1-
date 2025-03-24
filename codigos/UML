@@ -1,0 +1,94 @@
+1 CLASSE PEIXES
++--------------------+
+|      Peixe        |
++--------------------+
+| - especie: String |
+| - cor: String     |
+| - tamanho: double |
++--------------------+
+| + Peixe(String, String, double) |
+| + nadar()                       |
+| + comer()                       |
+| + exibirInfo()                  |
++--------------------+
+
+
+2 CLASSE CARROS 
+
++----------------------+
+|        Carro        |
++----------------------+
+| - modelo: String    |
+| - ano: int         |
+| - velocidade: double |
++----------------------+
+| + Carro(String, int) |
+| + acelerar(double)   |
+| + frear(double)      |
+| + estacionar()       |
+| + exibirStatus()     |
++----------------------+
+
+3 CLASSE PÁSSAROS
+
++------------------------+
+|       Passaros          |
++------------------------+
+| - especie: String       |
+| - peso: double          |
+| - cor: String           |
++------------------------+
+| + Passaros(especie: String, peso: double, cor: String) |
+| + voar(): void          |
+| + cantar(): void        |
+| + dormir(): void        |
+| + getEspecie(): String  |
+| + setEspecie(especie: String): void |
+| + getPeso(): double     |
+| + setPeso(peso: double): void |
+| + getCor(): String      |
+| + setCor(cor: String): void |
++------------------------+
+
+4 CLASSE SAPATOS 
+
++--------------------------+
+|        Sapatos            |
++--------------------------+
+| - tipo: String            |
+| - cor: String             |
+| - tamanho: double         |
++--------------------------+
+| + Sapatos(tipo: String, cor: String, tamanho: double) |
+| + calçar(): void          |
+| + descalçar(): void       |
+| + mostrarDetalhes(): void |
+| + getTipo(): String       |
+| + setTipo(tipo: String): void |
+| + getCor(): String        |
+| + setCor(cor: String): void |
+| + getTamanho(): double    |
+| + setTamanho(tamanho: double): void |
++--------------------------+
+
+5 CLASSE BANDEIRAS 
+
++------------------------------+
+|          Bandeiras            |
++------------------------------+
+| - pais: String                |
+| - corPrimaria: String         |
+| - tamanho: double             |
++------------------------------+
+| + Bandeiras(pais: String, corPrimaria: String, tamanho: double) |
+| + hastear(): void             |
+| + baixar(): void              |
+| + exibirDetalhes(): void      |
+| + getPais(): String           |
+| + setPais(pais: String): void |
+| + getCorPrimaria(): String    |
+| + setCorPrimaria(cor: String): void |
+| + getTamanho(): double        |
+| + setTamanho(tamanho: double): void |
++------------------------------+
+
