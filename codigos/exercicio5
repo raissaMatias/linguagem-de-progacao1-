@@ -1,1 +1,86 @@
+public class Fracao {
+    private int numerador;
+    private int denominador;
+
+    // Construtor
+    public Fracao(int numerador, int denominador) {
+        if (denominador == 0) {
+            throw new IllegalArgumentException("Denominador não pode ser zero.");
+        }
+        this.numerador = numerador;
+        this.denominador = denominador;
+        simplificar();  // Simplifica a fração automaticamente ao criar
+    }
+
+    // Método para simplificar a fração
+    private void simplificar() {
+        int gcd = mmc(numerador, denominador); // 
+        numerador /= mmc;
+        denominador /= mmc;
+    }
+
+    // Método para calcular o mínimo divisor comum (mmc)
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    // Operações
+
+    public Fracao adicionar(Fracao outra) {
+        int novoNumerador = this.numerador * outra.denominador + outra.numerador * this.denominador;
+        int novoDenominador = this.denominador * outra.denominador;
+        return new Fracao(novoNumerador, novoDenominador);
+    }
+
+    public Fracao subtrair(Fracao outra) {
+        int novoNumerador = this.numerador * outra.denominador - outra.numerador * this.denominador;
+        int novoDenominador = this.denominador * outra.denominador;
+        return new Fracao(novoNumerador, novoDenominador);
+    }
+
+    public Fracao multiplicar(Fracao outra) {
+        int novoNumerador = this.numerador * outra.numerador;
+        int novoDenominador = this.denominador * outra.denominador;
+        return new Fracao(novoNumerador, novoDenominador);
+    }
+
+    public Fracao dividir(Fracao outra) {
+        if (outra.numerador == 0) {
+            throw new ArithmeticException("Não é possível dividir por zero.");
+        }
+        int novoNumerador = this.numerador * outra.denominador;
+        int novoDenominador = this.denominador * outra.numerador;
+        return new Fracao(novoNumerador, novoDenominador);
+    }
+
+    // Método para exibir a fração
+    public String exibir() {
+        return numerador + "/" + denominador;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Criando frações
+        Fracao fracao1 = new Fracao(3, 4);   // 3/4
+        Fracao fracao2 = new Fracao(2, 5);   // 2/5
+
+        // Operações
+        Fracao soma = fracao1.adicionar(fracao2); // Soma: 3/4 + 2/5
+        Fracao subtracao = fracao1.subtrair(fracao2); // Subtração: 3/4 - 2/5
+        Fracao multiplicacao = fracao1.multiplicar(fracao2); // Multiplicação: 3/4 * 2/5
+        Fracao divisao = fracao1.dividir(fracao2); // Divisão: 3/4 ÷ 2/5
+
+        // Exibindo resultados
+        System.out.println("Soma: " + soma.exibir()); // Resultado da soma
+        System.out.println("Subtração: " + subtracao.exibir()); // Resultado da subtração
+        System.out.println("Multiplicação: " + multiplicacao.exibir()); // Resultado da multiplicação
+        System.out.println("Divisão: " + divisao.exibir()); // Resultado da divisão
+    }
+}
 
