@@ -209,4 +209,230 @@ public class Passaros {
         this.tipo = tipo;
     }
 }
-7) 
+
+7 public class EstacoesDoAno {
+    // Atributos
+    private String nome;
+    private int duracaoEmDias; // A duração da estação em dias
+    private String clima; // Clima típico da estação (por exemplo: "quente", "frio", "chuvas")
+
+    // Construtor
+    public EstacoesDoAno(String nome, int duracaoEmDias, String clima) {
+        this.nome = nome;
+        this.duracaoEmDias = duracaoEmDias;
+        this.clima = clima;
+    }
+
+    // Métodos
+    public void iniciar() {
+        System.out.println("A estação " + nome + " iniciou!");
+    }
+
+    public void terminar() {
+        System.out.println("A estação " + nome + " terminou!");
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Estação: " + nome + ", Duração: " + duracaoEmDias + " dias, Clima: " + clima);
+    }
+
+    // Métodos Getter e Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getDuracaoEmDias() {
+        return duracaoEmDias;
+    }
+
+    public void setDuracaoEmDias(int duracaoEmDias) {
+        this.duracaoEmDias = duracaoEmDias;
+    }
+
+    public String getClima() {
+        return clima;
+    }
+
+    public void setClima(String clima) {
+        this.clima = clima;
+    }
+}
+
+8) public class Cores {
+    // Atributos
+    private String nome; // Nome da cor (por exemplo, "Vermelho", "Azul", etc.)
+    private String codigoHexadecimal; // Código hexadecimal da cor (por exemplo, "#FF5733")
+    private boolean primaria; // Se a cor é primária (true) ou não (false)
+
+    // Construtor
+    public Cores(String nome, String codigoHexadecimal, boolean primaria) {
+        this.nome = nome;
+        this.codigoHexadecimal = codigoHexadecimal;
+        this.primaria = primaria;
+    }
+
+    // Métodos
+    public void exibirCor() {
+        System.out.println("A cor é " + nome + " e o código hexadecimal é " + codigoHexadecimal);
+    }
+
+    public void verificarCorPrimaria() {
+        if (primaria) {
+            System.out.println(nome + " é uma cor primária.");
+        } else {
+            System.out.println(nome + " não é uma cor primária.");
+        }
+    }
+
+    public void mudarCor(String novaCor, String novoCodigoHexadecimal) {
+        this.nome = novaCor;
+        this.codigoHexadecimal = novoCodigoHexadecimal;
+        System.out.println("A cor foi alterada para " + nome + " com o código hexadecimal " + codigoHexadecimal);
+    }
+
+    // Métodos Getter e Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCodigoHexadecimal() {
+        return codigoHexadecimal;
+    }
+
+    public void setCodigoHexadecimal(String codigoHexadecimal) {
+        this.codigoHexadecimal = codigoHexadecimal;
+    }
+
+    public boolean isPrimaria() {
+        return primaria;
+    }
+
+    public void setPrimaria(boolean primaria) {
+        this.primaria = primaria;
+    }
+}
+
+9 public class RedesSociais {
+    // Atributos
+    private String nome; // Nome da rede social (ex: "Facebook", "Instagram", etc.)
+    private int numeroDeUsuarios; // Número de usuários na rede social
+    private boolean possuiMensagensPrivadas; // Se a rede social oferece mensagens privadas (true ou false)
+
+    // Construtor
+    public RedesSociais(String nome, int numeroDeUsuarios, boolean possuiMensagensPrivadas) {
+        this.nome = nome;
+        this.numeroDeUsuarios = numeroDeUsuarios;
+        this.possuiMensagensPrivadas = possuiMensagensPrivadas;
+    }
+
+    // Métodos
+    public void exibirInformacoes() {
+        System.out.println("Rede Social: " + nome);
+        System.out.println("Número de Usuários: " + numeroDeUsuarios);
+        System.out.println("Possui Mensagens Privadas: " + (possuiMensagensPrivadas ? "Sim" : "Não"));
+    }
+
+    public void adicionarUsuario() {
+        numeroDeUsuarios++;
+        System.out.println("Um novo usuário foi adicionado à rede social. Número total de usuários: " + numeroDeUsuarios);
+    }
+
+    public void removerUsuario() {
+        if (numeroDeUsuarios > 0) {
+            numeroDeUsuarios--;
+            System.out.println("Um usuário foi removido. Número total de usuários: " + numeroDeUsuarios);
+        } else {
+            System.out.println("Não há usuários para remover.");
+        }
+    }
+
+    // Métodos Getter e Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNumeroDeUsuarios() {
+        return numeroDeUsuarios;
+    }
+
+    public void setNumeroDeUsuarios(int numeroDeUsuarios) {
+        this.numeroDeUsuarios = numeroDeUsuarios;
+    }
+
+    public boolean isPossuiMensagensPrivadas() {
+        return possuiMensagensPrivadas;
+    }
+
+    public void setPossuiMensagensPrivadas(boolean possuiMensagensPrivadas) {
+        this.possuiMensagensPrivadas = possuiMensagensPrivadas;
+    }
+}
+
+
+10 public class RacasDeCachorros {
+    // Atributos
+    private String nome; // Nome da raça do cachorro
+    private String tamanho; // Tamanho da raça (ex: "Pequeno", "Médio", "Grande")
+    private String temperamento; // Temperamento da raça (ex: "Amigável", "Protetor", "Independente")
+
+    // Construtor
+    public RacasDeCachorros(String nome, String tamanho, String temperamento) {
+        this.nome = nome;
+        this.tamanho = tamanho;
+        this.temperamento = temperamento;
+    }
+
+    // Métodos
+    public void exibirInformacoes() {
+        System.out.println("Raça: " + nome);
+        System.out.println("Tamanho: " + tamanho);
+        System.out.println("Temperamento: " + temperamento);
+    }
+
+    public void alimentar() {
+        System.out.println("Alimentando um " + nome + ".");
+    }
+
+    public void brincar() {
+        System.out.println("Brincando com o " + nome + "!");
+    }
+
+    // Métodos Getter e Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public String getTemperamento() {
+        return temperamento;
+    }
+
+    public void setTemperamento(String temperamento) {
+        this.temperamento = temperamento;
+    }
+}
+
+
