@@ -1,6 +1,6 @@
 CÓDIGOS EM JAVA ATIVIDADE 24/03
 
-3) ````java 
+3)
 
 public class Passaros {
     // Atributos
@@ -53,4 +53,160 @@ public class Passaros {
         this.cor = cor;
     }
 }
-```
+
+4) public class Sapatos {
+    // Atributos
+    private String tipo;
+    private String cor;
+    private double tamanho;
+
+    // Construtor
+    public Sapatos(String tipo, String cor, double tamanho) {
+        this.tipo = tipo;
+        this.cor = cor;
+        this.tamanho = tamanho;
+    }
+
+    // Métodos
+    public void calçar() {
+        System.out.println("O sapato está sendo calçado!");
+    }
+
+    public void descalçar() {
+        System.out.println("O sapato foi descalçado!");
+    }
+
+    public void mostrarDetalhes() {
+        System.out.println("Tipo: " + tipo + ", Cor: " + cor + ", Tamanho: " + tamanho);
+    }
+
+    // Métodos Getter e Setter
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public double getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(double tamanho) {
+        this.tamanho = tamanho;
+    }
+}
+
+5) public class Bandeiras {
+    // Atributos
+    private String pais;
+    private String corPrimaria;
+    private double tamanho;
+
+    // Construtor
+    public Bandeiras(String pais, String corPrimaria, double tamanho) {
+        this.pais = pais;
+        this.corPrimaria = corPrimaria;
+        this.tamanho = tamanho;
+    }
+
+    // Métodos
+    public void hastear() {
+        System.out.println("A bandeira está sendo hasteada!");
+    }
+
+    public void baixar() {
+        System.out.println("A bandeira foi baixada!");
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("País: " + pais + ", Cor Primária: " + corPrimaria + ", Tamanho: " + tamanho);
+    }
+
+    // Métodos Getter e Setter
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getCorPrimaria() {
+        return corPrimaria;
+    }
+
+    public void setCorPrimaria(String corPrimaria) {
+        this.corPrimaria = corPrimaria;
+    }
+
+    public double getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(double tamanho) {
+        this.tamanho = tamanho;
+    }
+}
+
+6) public class Bebidas {
+    // Atributos
+    private String nome;
+    private double volume; // em mililitros
+    private String tipo; // (ex: refrigerante, suco, água, etc.)
+
+    // Construtor
+    public Bebidas(String nome, double volume, String tipo) {
+        this.nome = nome;
+        this.volume = volume;
+        this.tipo = tipo;
+    }
+
+    // Métodos
+    public void abrir() {
+        System.out.println("A bebida " + nome + " foi aberta!");
+    }
+
+    public void beber() {
+        System.out.println("Você está bebendo " + nome + "!");
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Nome: " + nome + ", Volume: " + volume + "ml, Tipo: " + tipo);
+    }
+
+    // Métodos Getter e Setter
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+}
+7) 
