@@ -1,5 +1,62 @@
 CÓDIGOS EM JAVA ATIVIDADE 24/03
 
+1) public class Peixe {
+    // Atributos
+    private String especie;  // Especie do peixe
+    private String cor;      // Cor do peixe
+    private double tamanho;  // Tamanho do peixe (em centímetros)
+
+    // Construtor
+    public Peixe(String especie, String cor, double tamanho) {
+        this.especie = especie;
+        this.cor = cor;
+        this.tamanho = tamanho;
+    }
+
+    // Métodos
+    public void nadar() {
+        System.out.println("O peixe está nadando!");
+    }
+
+    public void comer() {
+        System.out.println("O peixe está comendo.");
+    }
+
+    public void exibirInfo() {
+        System.out.println("Espécie: " + especie);
+        System.out.println("Cor: " + cor);
+        System.out.println("Tamanho: " + tamanho +
+
+2) public class Carro {
+    // Atributos
+    private String modelo;     // Modelo do carro
+    private int ano;           // Ano de fabricação do carro
+    private double velocidade; // Velocidade atual do carro (em km/h)
+
+    // Construtor
+    public Carro(String modelo, int ano) {
+        this.modelo = modelo;
+        this.ano = ano;
+        this.velocidade = 0.0; // Inicializa a velocidade com 0
+    }
+
+    // Métodos
+    public void acelerar(double incremento) {
+        if (incremento > 0) {
+            velocidade += incremento;
+            System.out.println("O carro acelerou. Velocidade atual: " + velocidade + " km/h.");
+        } else {
+            System.out.println("O incremento deve ser positivo para acelerar.");
+        }
+    }
+
+    public void frear(double decremento) {
+        if (decremento > 0 && velocidade - decremento >= 0) {
+            velocidade -= decremento;
+            System.out.println("O carro freou. Velocidade atual: " + velocidade + " km/h.");
+        } else if (de
+
+
 3)
 
 public class Passaros {
