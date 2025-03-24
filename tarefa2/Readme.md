@@ -224,9 +224,9 @@
 # 1
 public class Peixe {
     // Atributos
-    private String especie;  // Especie do peixe
-    private String cor;      // Cor do peixe
-    private double tamanho;  // Tamanho do peixe (em centímetros)
+    private String especie;  
+    private String cor;      
+    private double tamanho; 
 
     // Construtor
     public Peixe(String especie, String cor, double tamanho) {
@@ -252,9 +252,9 @@ public class Peixe {
 # 2
  public class Carro {
     // Atributos
-    private String modelo;     // Modelo do carro
-    private int ano;           // Ano de fabricação do carro
-    private double velocidade; // Velocidade atual do carro (em km/h)
+    private String modelo;     
+    private int ano;           
+    private double velocidade; 
 
     // Construtor
     public Carro(String modelo, int ano) {
@@ -442,8 +442,8 @@ public class Passaros {
 public class Bebidas {
     // Atributos
     private String nome;
-    private double volume; // em mililitros
-    private String tipo; // (ex: refrigerante, suco, água, etc.)
+    private double volume; 
+    private String tipo; 
 
     // Construtor
     public Bebidas(String nome, double volume, String tipo) {
@@ -495,8 +495,8 @@ public class Bebidas {
 public class EstacoesDoAno {
     // Atributos
     private String nome;
-    private int duracaoEmDias; // A duração da estação em dias
-    private String clima; // Clima típico da estação (por exemplo: "quente", "frio", "chuvas")
+    private int duracaoEmDias; 
+    private String clima; 
 
     // Construtor
     public EstacoesDoAno(String nome, int duracaoEmDias, String clima) {
@@ -547,9 +547,9 @@ public class EstacoesDoAno {
 # 8 
 java public class Cores {
     // Atributos
-    private String nome; // Nome da cor (por exemplo, "Vermelho", "Azul", etc.)
-    private String codigoHexadecimal; // Código hexadecimal da cor (por exemplo, "#FF5733")
-    private boolean primaria; // Se a cor é primária (true) ou não (false)
+    private String nome; 
+    private String codigoHexadecimal; 
+    private boolean primaria; 
 
     //construtor
     public Cores(String nome, String codigoHexadecimal, boolean primaria) {
@@ -599,9 +599,9 @@ java public class Cores {
 
 public class RedesSociais {
     // Atributos
-    private String nome; // Nome da rede social (ex: "Facebook", "Instagram", etc.)
-    private int numeroDeUsuarios; // Número de usuários na rede social
-    private boolean possuiMensagensPrivadas; // Se a rede social oferece mensagens privadas (true ou false)
+    private String nome; 
+    private int numeroDeUsuarios; 
+    private boolean possuiMensagensPrivadas; 
 
     // Construtor
     public RedesSociais(String nome, int numeroDeUsuarios, boolean possuiMensagensPrivadas) {
@@ -652,9 +652,9 @@ public class RedesSociais {
 
 public class RacasDeCachorros {
     // Atributos
-    private String nome; // Nome da raça do cachorro
-    private String tamanho; // Tamanho da raça (ex: "Pequeno", "Médio", "Grande")
-    private String temperamento; // Temperamento da raça (ex: "Amigável", "Protetor", "Independente")
+    private String nome; 
+    private String tamanho; 
+    private String temperamento; // 
     // Construtor
     public RacasDeCachorros(String nome, String tamanho, String temperamento) {
         this.nome = nome;
