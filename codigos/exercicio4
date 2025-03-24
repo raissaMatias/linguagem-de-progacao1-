@@ -1,1 +1,62 @@
+public class TestaClasse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        //criacao de objetos
+        Fracao fracao1 = new Fracao(2, 5);
+        Fracao fracao2 = new Fracao(3, 7);
+
+        int opcao;
+        do {
+            // Exibir menu
+            System.out.println("\nMenu de Opções:");
+            System.out.println("1 - Somar frações");
+            System.out.println("2 - Subtrair frações");
+            System.out.println("3 - Multiplicar frações");
+            System.out.println("4 - Dividir frações");
+            System.out.println("5 - Exibir frações");
+            System.out.println("6 - Sair");
+            System.out.print("Escolha uma opção: ");
+            opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    // Soma
+                    Fracao resultadoSoma = fracao1.adicionar(fracao2);
+                    System.out.println("Resultado da soma: " + resultadoSoma.exibir());
+                    break;
+                case 2:
+                    // Subtração
+                    Fracao resultadoSubtracao = fracao1.subtrair(fracao2);
+                    System.out.println("Resultado da subtração: " + resultadoSubtracao.exibir());
+                    break;
+                case 3:
+                    // Multiplicação
+                    Fracao resultadoMultiplicacao = fracao1.multiplicar(fracao2);
+                    System.out.println("Resultado da multiplicação: " + resultadoMultiplicacao.exibir());
+                    break;
+                case 4:
+                    // Divisão
+                    try {
+                        Fracao resultadoDivisao = fracao1.dividir(fracao2);
+                        System.out.println("Resultado da divisão: " + resultadoDivisao.exibir());
+                    } catch (ArithmeticException e) {
+                        System.out.println("Erro: " + e.getMessage());
+                    }
+                    break;
+                case 5:
+                    // Exibir frações
+                    System.out.println("Fracao 1: " + fracao1.exibir());
+                    System.out.println("Fracao 2: " + fracao2.exibir());
+                    break;
+                case 6:
+                    System.out.println("Saindo...");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+            }
+        } while (opcao != 6); // O loop continua até que o usuário escolha a opção 6 para sair.
+
+        scanner.close();
+    }
+}
