@@ -1,4 +1,6 @@
-EXERCÍCIO 1 
+# Lista 1 
+
+# exercício1
 ```java   
 import java.util.Scanner;
 
@@ -26,7 +28,7 @@ public class IdadeEmDias {
     }
 }
 ```
-TESTE DE MESA EXERCICIO 1
+# TESTE DE MESA EXERCICIO 1
 1) entrada
   anos: 21
   meses: 11
