@@ -92,3 +92,109 @@
 | + setTamanho(tamanho: double): void |
 +------------------------------+
 
+6 CLASSE BEBIDAS
+
++---------------------------+
+|          Bebidas           |
++---------------------------+
+| - nome: String             |
+| - volume: double           |
+| - tipo: String             |
++---------------------------+
+| + Bebidas(nome: String, volume: double, tipo: String) |
+| + abrir(): void            |
+| + beber(): void            |
+| + exibirDetalhes(): void   |
+| + getNome(): String        |
+| + setNome(nome: String): void |
+| + getVolume(): double      |
+| + setVolume(volume: double): void |
+| + getTipo(): String        |
+| + setTipo(tipo: String): void |
++---------------------------+
+
+7 CLASSE ESTAÇÔES DO ANO
++----------------------------+
+|        EstacoesDoAno        |
++----------------------------+
+| - nome: String              |
+| - duracaoEmDias: int        |
+| - clima: String             |
++----------------------------+
+| + EstacoesDoAno(nome: String, duracaoEmDias: int, clima: String) |
+| + iniciar(): void           |
+| + terminar(): void          |
+| + exibirDetalhes(): void    |
+| + getNome(): String         |
+| + setNome(nome: String): void |
+| + getDuracaoEmDias(): int   |
+| + setDuracaoEmDias(duracaoEmDias: int): void |
+| + getClima(): String        |
+| + setClima(clima: String): void |
++----------------------------+
+
+8 CLASSE CORES 
+
++------------------------------+
+|            Cores              |
++------------------------------+
+| - nome: String                |
+| - codigoHexadecimal: String   |
+| - primaria: boolean           |
++------------------------------+
+| + Cores(nome: String, codigoHexadecimal: String, primaria: boolean) |
+| + exibirCor(): void           |
+| + verificarCorPrimaria(): void |
+| + mudarCor(novaCor: String, novoCodigoHexadecimal: String): void |
+| + getNome(): String           |
+| + setNome(nome: String): void |
+| + getCodigoHexadecimal(): String |
+| + setCodigoHexadecimal(codigoHexadecimal: String): void |
+| + isPrimaria(): boolean       |
+| + setPrimaria(primaria: boolean): void |
++------------------------------+
+
+9 CLASSE REDES SOCIAIS 
+
++----------------------------------+
+|          RacasDeCachorros        |
++----------------------------------+
+| - nome: String                   |
+| - tamanho: String                |
+| - temperamento: String           |
++----------------------------------+
+| + RacasDeCachorros(nome: String, tamanho: String, temperamento: String) |
+| + exibirInformacoes(): void      |
+| + alimentar(): void              |
+| + brincar(): void                |
+| + getNome(): String              |
+| + setNome(nome: String): void    |
+| + getTamanho(): String           |
+| + setTamanho(tamanho: String): void |
+| + getTemperamento(): String      |
+| + setTemperamento(temperamento: String): void |
++----------------------------------+
+
+
+10 CLASSE RAÇAS DE CACHORROS
+
++----------------------------------+
+|          RacasDeCachorros        |
++----------------------------------+
+| - nome: String                   |
+| - tamanho: String                |
+| - temperamento: String           |
++----------------------------------+
+| + RacasDeCachorros(nome: String, tamanho: String, temperamento: String) |
+| + exibirInformacoes(): void      |
+| + alimentar(): void              |
+| + brincar(): void                |
+| + getNome(): String              |
+| + setNome(nome: String): void    |
+| + getTamanho(): String           |
+| + setTamanho(tamanho: String): void |
+| + getTemperamento(): String      |
+| + setTemperamento(temperamento: String): void |
++----------------------------------+
+
+
