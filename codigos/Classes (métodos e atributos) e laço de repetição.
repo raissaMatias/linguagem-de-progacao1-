@@ -1,1 +1,56 @@
 CÓDIGOS EM JAVA ATIVIDADE 24/03
+
+3) ````java 
+
+public class Passaros {
+    // Atributos
+    private String especie;
+    private double peso;
+    private String cor;
+
+    // Construtor
+    public Passaros(String especie, double peso, String cor) {
+        this.especie = especie;
+        this.peso = peso;
+        this.cor = cor;
+    }
+
+    // Métodos
+    public void voar() {
+        System.out.println("O pássaro está voando!");
+    }
+
+    public void cantar() {
+        System.out.println("O pássaro está cantando!");
+    }
+
+    public void dormir() {
+        System.out.println("O pássaro está dormindo!");
+    }
+
+    // Métodos Getter e Setter
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+}
+```
