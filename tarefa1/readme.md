@@ -368,3 +368,273 @@ public class VerificaAprovacao {
    nota2: 3
    saída: Média do aluno: 5.50
    Aluno REPROVADO! 
+
+# exercício 11
+```java
+import java.util.Scanner;
+
+public class VerificaVotacao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário o ano atual e o ano de nascimento
+        System.out.print("informe o ano atual: ");
+        int anoAtual = scanner.nextInt();
+
+        System.out.print("informe o ano de nascimento: ");
+        int anoNascimento = scanner.nextInt();
+
+        // Calcula a idade da pessoa
+        int idade = anoAtual - anoNascimento;
+
+        // Exibe a idade
+        System.out.println("Idade: " + idade + " anos");
+
+        // Verifica se pode votar (idade mínima de 16 anos)
+        if (idade >= 16) {
+            System.out.println("Você PODE votar este ano.");
+        } else {
+            System.out.println("Você NÃO PODE votar este ano.");
+        }
+
+        scanner.close();
+    }
+}
+# TESTE DE MESA exercicio 11:
+1) Digite o ano atual: 2025
+Digite o ano de nascimento: 2000
+Idade: 25 anos
+Você PODE votar este ano.
+2) Digite o ano atual: 2025
+Digite o ano de nascimento: 2009
+Idade: 16 anos
+Você PODE votar este ano.
+3) Digite o ano atual: 2025
+Digite o ano de nascimento: 2011
+Idade: 14 anos
+Você NÃO PODE votar este ano.
+```
+# exercício 12 
+```java
+import java.util.Scanner;
+
+public class MaiorValor {
+    public static void main(String[] args) {
+        // Criação do objeto Scanner para ler as entradas do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        int valor1, valor2;
+
+        // Solicitar os valores até que sejam diferentes
+        do {
+            System.out.print("qual o primeiro valor: ");
+            valor1 = scanner.nextInt();
+
+            System.out.print("qual o segundo valor: ");
+            valor2 = scanner.nextInt();
+
+            if (valor1 == valor2) {
+                System.out.println("Os valores não podem ser iguais. Tente novamente.");
+            } // mensagem de ERRO!!!
+
+        } while (valor1 == valor2); // Repete enquanto os valores forem iguais
+
+        // Comparar os valores e exibir o maior
+        if (valor1 > valor2) {
+            System.out.println("O maior valor é: " + valor1);
+        } else {
+            System.out.println("O maior valor é: " + valor2);
+        }
+        scanner.close();
+    }
+}
+TESTE DE MESA:
+1) valor1: 55
+   valor2: 22
+   O maior valor é: 55
+2) valor1: 55
+   valor2: 55
+Os valores não podem ser iguais. Tente novamente.
+```
+# exercício 13
+```java
+import java.util.Scanner;
+
+public class OrdenarValores {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Lendo dois valores inteiros
+        System.out.print("informe o primeiro valor: ");
+        int valor1 = scanner.nextInt();
+        
+        System.out.print("informe o segundo valor: ");
+        int valor2 = scanner.nextInt();
+
+        // Verificando a ordem crescente
+        if (valor1 < valor2) {
+            System.out.println("Valores em ordem crescente: " + valor1 + ", " + valor2);
+        } else {
+            System.out.println("Valores em ordem crescente: " + valor2 + ", " + valor1);
+        }
+
+        // Fechando o scanner
+        scanner.close();
+    }
+}
+TESTE DE MESA exercicio 12
+
+1) Digite o primeiro valor: 10
+Digite o segundo valor: 5
+Valores em ordem crescente: 5, 10
+2) Digite o primeiro valor: 3
+Digite o segundo valor: 10
+Valores em ordem crescente: 3, 10
+```
+# exercício 13
+```java
+import java.util.Scanner;
+
+public class OrdenarValores {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Lendo dois valores inteiros
+        System.out.print("informe o primeiro valor: ");
+        int valor1 = scanner.nextInt();
+        
+        System.out.print("informe o segundo valor: ");
+        int valor2 = scanner.nextInt();
+
+        // Verificando a ordem crescente
+        if (valor1 < valor2) {
+            System.out.println("Valores em ordem crescente: " + valor1 + ", " + valor2);
+        } else {
+            System.out.println("Valores em ordem crescente: " + valor2 + ", " + valor1);
+        }
+
+        // Fechando o scanner
+        scanner.close();
+    }
+}
+# TESTE DE MESA exercicio 13
+
+1) Digite o primeiro valor: 10
+Digite o segundo valor: 5
+Valores em ordem crescente: 5, 10
+2) Digite o primeiro valor: 3
+Digite o segundo valor: 10
+Valores em ordem crescente: 3, 10
+```
+# exercício 14 
+```java
+```java
+import java.util.Scanner; // a classe scanner está dentro do pacote java.util e é usado para capturar a entrada do usuário
+
+public class DuracaoJogo {
+    public static void main(String[] args) { //método principal onde o programa começa
+        Scanner scanner = new Scanner(System.in); // cria um novo obj da classe scanner. Scanner é a biblioteca, scanner variável que irá armazenar a instância da classe Scanner e new Scanner um novo obj da classe scanner
+
+        // leitura da entrada de dados do user 
+        System.out.print("informe a hora em que o jogo começou (apenas horas): ");
+        int horaInicio = scanner.nextInt();
+
+        System.out.print("informe a hora em que o jogo terminou (apenas horas): ");
+        int horaFim = scanner.nextInt(); //scanner é instancia do obj da classe Scanner e o next é o método da classe e tbm  próprio valor fornecido pelo usuário
+
+        // calculo 
+        int duracao;
+        if (horaFim > horaInicio) {
+            // quando o jogo termina no mesmo dia
+            duracao = horaFim - horaInicio;
+        } else {
+            // quando o jogo termina no dia seguinte
+            duracao = (24 - horaInicio) + horaFim;
+        }
+
+        // resultado do calculo de duracao do jogo
+        System.out.println("o jogo teve duração de " + duracao + " horas.");
+    }
+}
+
+```
+# TESTE DE MESA EXERCICIO 14:
+1) QUANDO O JOGO TERMINA NO MESMO DIA:
+   horaFim: 12
+   horaInicio: 18
+   o jogo durou 6 horas
+1) QUANDO O JOGO TERMINA NO DIA SEGUINTE:
+   horaInicio: 17
+   horaFim: 3
+   o jogo durou 10 horas
+```
+# exercício 15
+```java
+import java.util.Scanner;
+public class CalculoSalario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Definição de constantes
+        final int HORAS_SEMANAIS = 40;
+        final int SEMANAS_POR_MES = 4;
+        final int HORAS_MENSAIS = HORAS_SEMANAIS * SEMANAS_POR_MES;
+        final double EXTRA_PERCENTUAL = 1.5;
+
+        // Entrada de dados
+        System.out.print("Digite o número de horas trabalhadas no mês: ");
+        int horasTrabalhadas = scanner.nextInt();
+
+        System.out.print("Digite o salário por hora: ");
+        double salarioPorHora = scanner.nextDouble();
+
+        double salarioTotal;
+
+        // Cálculo do salário considerando horas extras
+        if (horasTrabalhadas > HORAS_MENSAIS) {
+            int horasExtras = horasTrabalhadas - HORAS_MENSAIS;
+            double valorHoraExtra = salarioPorHora * EXTRA_PERCENTUAL;
+            salarioTotal = (HORAS_MENSAIS * salarioPorHora) + (horasExtras * valorHoraExtra);
+        } else {
+            salarioTotal = horasTrabalhadas * salarioPorHora;
+        }
+
+        // Exibir o salário total
+        System.out.printf("O salário total do funcionário é: R$ %.2f%n", salarioTotal);
+
+        scanner.close();
+    }
+}
+
+# TESTE DE MESA 
+1) Digite o número de horas trabalhadas no mês: 44
+Digite o salário por hora: 30
+O sal?rio total do funcionário é: R$ 1320.00
+```
+# exercício 16 
+```java
+public class DespesaTrimestral {
+    public static void main(String[] args) {
+        
+        // Definindo os valores gastos em cada mês
+        double janeiro = 15000;  // Gasto de janeiro
+        double fevereiro = 23000; // Gasto de fevereiro
+        double março = 17000;    // Gasto de março
+
+        // calculo do gasto total do trimestre
+        double gastoTotal = janeiro + fevereiro + março;
+
+        // calculo da média mensal de gastos
+        double mediaMensal = gastoTotal / 3;
+
+        // exibe os resultados
+        System.out.println("Despesa total do trimestre: R$ " + gastoTotal);
+        System.out.println("Média mensal de gastos: R$ " + mediaMensal);
+    }
+}
+# TESTE DE MESA
+1) Despesa total no trimestre: R$ 55000.0
+Média mensal de gastos: R$ 18333.33
+```
