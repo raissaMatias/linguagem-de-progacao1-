@@ -778,12 +778,12 @@ public class Fracao {
 
     // Método para simplificar a fração
     private void simplificar() {
-        int gcd = mmc(numerador, denominador); // 
-        numerador /= mmc;
-        denominador /= mmc;
+        int gcd = gcd(numerador, denominador); // Encontrando o GCD
+        numerador /= gcd;
+        denominador /= gcd;
     }
 
-    // Método para calcular o mínimo divisor comum (mmc)
+    // Método para calcular o maior divisor comum (GCD)
     private int gcd(int a, int b) {
         while (b != 0) {
             int temp = b;
@@ -835,10 +835,10 @@ public class Main {
         Fracao fracao2 = new Fracao(3, 7);   // 3/7
 
         // Operações
-        Fracao soma = fracao1.adicionar(fracao2); // Soma: 2/45 + 3/7
-        Fracao subtracao = fracao1.subtrair(fracao2); // Subtração: 3/4 - 2/5
-        Fracao multiplicacao = fracao1.multiplicar(fracao2); // Multiplicação: 2/5 * 3/7
-        Fracao divisao = fracao1.dividir(fracao2); // Divisão: 2/5 ÷ 3/7
+        Fracao soma = fracao1.adicionar(fracao2); // Soma: (2/5 + 3/7)
+        Fracao subtracao = fracao1.subtrair(fracao2); // Subtração: (2/5 - 3/7)
+        Fracao multiplicacao = fracao1.multiplicar(fracao2); // Multiplicação: (2/5 * 3/7)
+        Fracao divisao = fracao1.dividir(fracao2); // Divisão: (2/5 ÷ 3/7)
 
         // Exibindo resultados
         System.out.println("Soma: " + soma.exibir()); // Resultado da soma
@@ -847,4 +847,10 @@ public class Main {
         System.out.println("Divisão: " + divisao.exibir()); // Resultado da divisão
     }
 }
+
 ```
+# a saída será 
+Soma: 29/35
+Subtração: -1/35
+Multiplicação: 6/35
+Divisão: 14/15
