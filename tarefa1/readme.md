@@ -568,8 +568,9 @@ public class DuracaoJogo {
    horaInicio: 17
    horaFim: 3
    o jogo durou 10 horas
-```
-# 
+
+# exercicío 15
+```java
 import java.util.Scanner;
 public class CalculoSalario {
     public static void main(String[] args) {
@@ -605,14 +606,15 @@ public class CalculoSalario {
         scanner.close();
     }
 }
-
+```
 # TESTE DE MESA 
 1) Digite o número de horas trabalhadas no mês: 44
 Digite o salário por hora: 30
 O sal?rio total do funcionário é: R$ 1320.00
-```
-# exercício 16 
+
+# exercício 16
 ```java
+import java.util.Scanner;
 public class DespesaTrimestral {
     public static void main(String[] args) {
         
@@ -632,7 +634,8 @@ public class DespesaTrimestral {
         System.out.println("Média mensal de gastos: R$ " + mediaMensal);
     }
 }
+```
 # TESTE DE MESA
 1) Despesa total no trimestre: R$ 55000.0
 Média mensal de gastos: R$ 18333.33
-```
+
