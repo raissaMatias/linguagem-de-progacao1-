@@ -530,7 +530,6 @@ Valores em ordem crescente: 3, 10
 ```
 # exercício 14 
 ```java
-```java
 import java.util.Scanner; // a classe scanner está dentro do pacote java.util e é usado para capturar a entrada do usuário
 
 public class DuracaoJogo {
@@ -570,8 +569,7 @@ public class DuracaoJogo {
    horaFim: 3
    o jogo durou 10 horas
 ```
-# exercício 15
-```java
+# 
 import java.util.Scanner;
 public class CalculoSalario {
     public static void main(String[] args) {
