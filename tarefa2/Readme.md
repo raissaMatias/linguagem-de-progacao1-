@@ -222,6 +222,7 @@
 
 # exercício 3
 # 1
+```java
 public class Peixe {
     // Atributos
     private String especie;  
@@ -248,9 +249,10 @@ public class Peixe {
         System.out.println("Espécie: " + especie);
         System.out.println("Cor: " + cor);
         System.out.println("Tamanho: " + tamanho +
-
+```
 # 2
- public class Carro {
+ ```java
+public class Carro {
     // Atributos
     private String modelo;     
     private int ano;           
@@ -278,8 +280,9 @@ public class Peixe {
             velocidade -= decremento;
             System.out.println("O carro freou. Velocidade atual: " + velocidade + " km/h.");
         } else if (de
-
+```
 # 3
+```java
 public class Passaros {
     // Atributos
     private String especie;
@@ -331,9 +334,10 @@ public class Passaros {
         this.cor = cor;
     }
 }
-
+```
 # 4
-   public class Sapatos {
+```java
+public class Sapatos {
     // Atributos
     private String tipo;
     private String cor;
@@ -384,9 +388,10 @@ public class Passaros {
         this.tamanho = tamanho;
     }
 }
-
+```
 # 5
-   public class Bandeiras {
+```
+public class Bandeiras {
     // Atributos
     private String pais;
     private String corPrimaria;
@@ -437,8 +442,9 @@ public class Passaros {
         this.tamanho = tamanho;
     }
 }
-
+```
 # 6  
+```java
 public class Bebidas {
     // Atributos
     private String nome;
@@ -490,8 +496,9 @@ public class Bebidas {
         this.tipo = tipo;
     }
 }
-
+```
 # 7 
+```java
 public class EstacoesDoAno {
     // Atributos
     private String nome;
@@ -543,9 +550,10 @@ public class EstacoesDoAno {
         this.clima = clima;
     }
 }
-
+```
 # 8 
-java public class Cores {
+```java
+public class Cores {
     // Atributos
     private String nome; 
     private String codigoHexadecimal; 
@@ -594,9 +602,9 @@ java public class Cores {
         this.primaria = primaria;
     }
 }
-
+```
 # 9 
-
+```java
 public class RedesSociais {
     // Atributos
     private String nome; 
@@ -647,9 +655,9 @@ public class RedesSociais {
         this.possuiMensagensPrivadas = possuiMensagensPrivadas;
     }
 }
-
+```
 # 10
-
+```java
 public class RacasDeCachorros {
     // Atributos
     private String nome; 
@@ -693,7 +701,7 @@ public class RacasDeCachorros {
         this.temperamento = temperamento;
     }
 }
-
+```
 # exercício 4 
 
 ```java
@@ -854,3 +862,4 @@ Soma: 29/35
 Subtração: -1/35
 Multiplicação: 6/35
 Divisão: 14/15
+```
