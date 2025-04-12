@@ -223,32 +223,35 @@
 # exercício 3
 # 1
 ```java
-public class Peixe {
-    // Atributos
-    private String especie;  
-    private String cor;      
-    private double tamanho; 
+package org.exemplo;
 
-    // Construtor
+public class Peixe {
+
+    private String especie;
+    private String cor;
+    private double tamanho;
+
+
     public Peixe(String especie, String cor, double tamanho) {
         this.especie = especie;
         this.cor = cor;
         this.tamanho = tamanho;
     }
 
-    // Métodos
-    public void nadar() {
-        System.out.println("O peixe está nadando!");
+    public String alimentar() {
+        return("O peixe  " + especie + "está comendo");
     }
 
-    public void comer() {
-        System.out.println("O peixe está comendo.");
+    public String nadar() {
+        return("O peixe  " + especie + "está nadando");
     }
 
     public void exibirInfo() {
         System.out.println("Espécie: " + especie);
         System.out.println("Cor: " + cor);
-        System.out.println("Tamanho: " + tamanho +
+        System.out.println("Tamanho: " + tamanho);
+    }
+}
 ```
 # 2
  ```java
@@ -283,33 +286,33 @@ public class Carro {
 ```
 # 3
 ```java
-public class Passaros {
-    // Atributos
+package org.exemplo;
+
+public class Passaro {
+    // 3 atributos
     private String especie;
     private double peso;
     private String cor;
 
-    // Construtor
-    public Passaros(String especie, double peso, String cor) {
+    // 3 construtores
+    public Passaro (String especie, double peso, String cor) {
         this.especie = especie;
         this.peso = peso;
         this.cor = cor;
     }
 
-    // Métodos
-    public void voar() {
-        System.out.println("O pássaro está voando!");
+    // dois metodos
+    public String cantar() {
+        return("O passarro  " + especie + "está cantando");
     }
 
-    public void cantar() {
-        System.out.println("O pássaro está cantando!");
+    public String dormir() {
+        return("O pássaro está dormindo " + especie + "!");
     }
 
-    public void dormir() {
-        System.out.println("O pássaro está dormindo!");
-    }
+    public String voar() {return("O pássaro" + especie + "está voando");
+}
 
-    // Métodos Getter e Setter
     public String getEspecie() {
         return especie;
     }
@@ -337,33 +340,27 @@ public class Passaros {
 ```
 # 4
 ```java
-public class Sapatos {
-    // Atributos
+package org.exemplo;
+
+public class Sapato {
+
     private String tipo;
     private String cor;
     private double tamanho;
 
-    // Construtor
-    public Sapatos(String tipo, String cor, double tamanho) {
+    public Sapato (String tipo, String cor, double tamanho) {
         this.tipo = tipo;
         this.cor = cor;
         this.tamanho = tamanho;
     }
 
-    // Métodos
-    public void calçar() {
-        System.out.println("O sapato está sendo calçado!");
+    public String calcar() {
+        return("O sapato " + tipo + "da cor "+ cor + ", do tamanho " + tamanho + "está sendo calçado!");
+    }
+    public String descalcar() { return("O sapato " + tipo + "da cor ,"+ cor + ", do tamanho " + tamanho + "NÃO está sendo calçado!");
     }
 
-    public void descalçar() {
-        System.out.println("O sapato foi descalçado!");
-    }
-
-    public void mostrarDetalhes() {
-        System.out.println("Tipo: " + tipo + ", Cor: " + cor + ", Tamanho: " + tamanho);
-    }
-
-    // Métodos Getter e Setter
+    // get and set
     public String getTipo() {
         return tipo;
     }
@@ -390,34 +387,38 @@ public class Sapatos {
 }
 ```
 # 5
-```
-public class Bandeiras {
-    // Atributos
+```java
+package org.exemplo;
+
+public class Bandeira {
+    // 3 atributos
     private String pais;
-    private String corPrimaria;
     private double tamanho;
 
     // Construtor
-    public Bandeiras(String pais, String corPrimaria, double tamanho) {
+    public Bandeira(String pais, double tamanho) {
         this.pais = pais;
-        this.corPrimaria = corPrimaria;
         this.tamanho = tamanho;
     }
 
-    // Métodos
-    public void hastear() {
-        System.out.println("A bandeira está sendo hasteada!");
+    // 2 metodos
+    public String hastear() {
+        return "A bandeira do " + pais + " de tamanho " + tamanho + " está hasteada!";
     }
 
-    public void baixar() {
-        System.out.println("A bandeira foi baixada!");
+    public String baixar() {
+        return "A bandeira do " + pais + " de tamanho " + tamanho + " está baixada!";
     }
 
-    public void exibirDetalhes() {
-        System.out.println("País: " + pais + ", Cor Primária: " + corPrimaria + ", Tamanho: " + tamanho);
+    public String cmmedir() {
+        return "Bandeira tem " + tamanho + " cm";
     }
 
-    // Métodos Getter e Setter
+    public String mmedir() {
+        return "Bandeira tem " + tamanho + " m";
+    }
+
+    // get and set
     public String getPais() {
         return pais;
     }
@@ -426,13 +427,6 @@ public class Bandeiras {
         this.pais = pais;
     }
 
-    public String getCorPrimaria() {
-        return corPrimaria;
-    }
-
-    public void setCorPrimaria(String corPrimaria) {
-        this.corPrimaria = corPrimaria;
-    }
 
     public double getTamanho() {
         return tamanho;
@@ -442,36 +436,32 @@ public class Bandeiras {
         this.tamanho = tamanho;
     }
 }
+
 ```
 # 6  
 ```java
-public class Bebidas {
-    // Atributos
+package org.exemplo;
+public class Bebida{
+    // 3 atributos
     private String nome;
-    private double volume; 
-    private String tipo; 
-
-    // Construtor
-    public Bebidas(String nome, double volume, String tipo) {
+    private double volume;
+    private String tipo;
+    // 3 metodos
+    public Bebida(String nome, double volume, String tipo) {
         this.nome = nome;
         this.volume = volume;
         this.tipo = tipo;
     }
-
-    // Métodos
-    public void abrir() {
-        System.out.println("A bebida " + nome + " foi aberta!");
+    // 2 metodos
+    public String abrir() {
+        return("A bebida " + nome + " foi aberta!");
     }
 
-    public void beber() {
-        System.out.println("Você está bebendo " + nome + "!");
+    public String beber() {
+        return ("Você está bebendo " + nome + "!");
     }
 
-    public void exibirDetalhes() {
-        System.out.println("Nome: " + nome + ", Volume: " + volume + "ml, Tipo: " + tipo);
-    }
-
-    // Métodos Getter e Setter
+    // get and set
     public String getNome() {
         return nome;
     }
@@ -499,20 +489,27 @@ public class Bebidas {
 ```
 # 7 
 ```java
-public class EstacoesDoAno {
-    // Atributos
-    private String nome;
-    private int duracaoEmDias; 
-    private String clima; 
+package org.exemplo;
 
-    // Construtor
-    public EstacoesDoAno(String nome, int duracaoEmDias, String clima) {
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public class Estacao{
+    // 4 atributos
+    private String nome;
+    private String clima;
+    private LocalDate dataInicio;
+    private LocalDate dataFim;
+
+    // 4 construtores
+    public Estacao(String nome, String clima, LocalDate dataInicio, LocalDate dataFim) {
         this.nome = nome;
-        this.duracaoEmDias = duracaoEmDias;
         this.clima = clima;
+        this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
     }
 
-    // Métodos
+    // 3 métodos
     public void iniciar() {
         System.out.println("A estação " + nome + " iniciou!");
     }
@@ -521,25 +518,17 @@ public class EstacoesDoAno {
         System.out.println("A estação " + nome + " terminou!");
     }
 
-    public void exibirDetalhes() {
-        System.out.println("Estação: " + nome + ", Duração: " + duracaoEmDias + " dias, Clima: " + clima);
+    public long calcularDuracao() {
+        return ChronoUnit.DAYS.between(dataInicio, dataFim);
     }
 
-    // Métodos Getter e Setter
+    // get and set
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public int getDuracaoEmDias() {
-        return duracaoEmDias;
-    }
-
-    public void setDuracaoEmDias(int duracaoEmDias) {
-        this.duracaoEmDias = duracaoEmDias;
     }
 
     public String getClima() {
@@ -549,18 +538,34 @@ public class EstacoesDoAno {
     public void setClima(String clima) {
         this.clima = clima;
     }
+
+    public LocalDate getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(LocalDate dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    public LocalDate getDataFim() {
+        return dataFim;
+    }
+
+    public void setDataFim(LocalDate dataFim) {
+        this.dataFim = dataFim;
+    }
 }
 ```
 # 8 
 ```java
-public class Cores {
+public class Cor {
     // Atributos
     private String nome; 
     private String codigoHexadecimal; 
     private boolean primaria; 
 
     //construtor
-    public Cores(String nome, String codigoHexadecimal, boolean primaria) {
+    public Cor(String nome, String codigoHexadecimal, boolean primaria) {
         this.nome = nome;
         this.codigoHexadecimal = codigoHexadecimal;
         this.primaria = primaria;
@@ -605,105 +610,69 @@ public class Cores {
 ```
 # 9 
 ```java
-public class RedesSociais {
-    // Atributos
-    private String nome; 
-    private int numeroDeUsuarios; 
-    private boolean possuiMensagensPrivadas; 
-
-    // Construtor
-    public RedesSociais(String nome, int numeroDeUsuarios, boolean possuiMensagensPrivadas) {
-        this.nome = nome;
-        this.numeroDeUsuarios = numeroDeUsuarios;
-        this.possuiMensagensPrivadas = possuiMensagensPrivadas;
-    }
-    // Métodos
-    public void exibirInformacoes() {
-        System.out.println("Rede Social: " + nome);
-        System.out.println("Número de Usuários: " + numeroDeUsuarios);
-        System.out.println("Possui Mensagens Privadas: " + (possuiMensagensPrivadas ? "Sim" : "Não"));
-    }
-    public void adicionarUsuario() {
-        numeroDeUsuarios++;
-        System.out.println("Um novo usuário foi adicionado à rede social. Número total de usuários: " + numeroDeUsuarios);
-    }
-    public void removerUsuario() {
-        if (numeroDeUsuarios > 0) {
-            numeroDeUsuarios--;
-            System.out.println("Um usuário foi removido. Número total de usuários: " + numeroDeUsuarios);
-        } else {
-            System.out.println("Não há usuários para remover.");
-        }
-    }
-    // Métodos Getter e Setter
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public int getNumeroDeUsuarios() {
-        return numeroDeUsuarios;
-    }
-    public void setNumeroDeUsuarios(int numeroDeUsuarios) {
-        this.numeroDeUsuarios = numeroDeUsuarios;
-    }
-    public boolean isPossuiMensagensPrivadas() {
-        return possuiMensagensPrivadas;
-    }
-    public void setPossuiMensagensPrivadas(boolean possuiMensagensPrivadas) {
-        this.possuiMensagensPrivadas = possuiMensagensPrivadas;
-    }
-}
+redes
 ```
 # 10
 ```java
-public class RacasDeCachorros {
-    // Atributos
-    private String nome; 
-    private String tamanho; 
-    private String temperamento; // 
-    // Construtor
-    public RacasDeCachorros(String nome, String tamanho, String temperamento) {
+package org.exemplo;
+
+public class Cachorro {
+
+    // 3 atributos
+    private String nome;
+    private String tamanho;
+    private String temperamento;
+
+    // 3 construtores
+    public Cachorro(String nome, String tamanho, String temperamento) {
         this.nome = nome;
         this.tamanho = tamanho;
         this.temperamento = temperamento;
     }
-    // Métodos
+
+    // 2 metodos
     public void exibirInformacoes() {
         System.out.println("Raça: " + nome);
         System.out.println("Tamanho: " + tamanho);
         System.out.println("Temperamento: " + temperamento);
     }
-    public void alimentar() {
-        System.out.println("Alimentando um " + nome + ".");
+
+    public String alimentar() {
+        return("O cachorro  " + nome + "está comendo");
     }
-    public void brincar() {
-        System.out.println("Brincando com o " + nome + "!");
+
+    public String brincar() {
+       return("O cachorro está brincando " + nome + "!");
     }
-    // Métodos Getter e Setter
+
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     public String getTamanho() {
         return tamanho;
     }
+
     public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
     }
+
     public String getTemperamento() {
         return temperamento;
     }
+
     public void setTemperamento(String temperamento) {
         this.temperamento = temperamento;
     }
 }
+
 ```
 # exercício 4 
-
 ```java
 public class TestaClasse {
     public static void main(String[] args) {
