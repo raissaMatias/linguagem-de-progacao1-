@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.exemplo.RedeController">
+
+    <children>
+
+        <!-- Campo de texto para digitar nome -->
+        <TextField fx:id="tf_nomeusuario" layoutX="30.0" layoutY="30.0" prefWidth="300.0" promptText="Digite o nome" />
+
+        <!-- Botão Adicionar -->
+        <Button layoutX="350.0" layoutY="30.0" onAction="#adicionar" text="Adicionar" />
+
+        <!-- Botão Remover -->
+        <Button layoutX="450.0" layoutY="30.0" onAction="#remover" text="Remover" />
+
+        <!-- Lista de usuários -->
+        <ListView fx:id="listaUsuarios" layoutX="30.0" layoutY="80.0" prefHeight="200.0" prefWidth="306.0" />
+
+        <!-- Label para mensagens -->
+        <Label fx:id="lb_nomeusuario" layoutX="30.0" layoutY="300.0" prefWidth="500.0" />
+      <Button fx:id="btn_voltar" layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onAction="#voltar" text="voltar" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@redesSociais.png" />
+         </image>
+      </ImageView>
+
+    </children>
+</AnchorPane>
