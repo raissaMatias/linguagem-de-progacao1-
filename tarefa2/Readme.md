@@ -21,204 +21,9 @@
 ![image](https://github.com/user-attachments/assets/c487223f-0cd2-44aa-a161-5496acf046bf)
 
 # exercício 2
-# 1 CLASSE PEIXES
-+--------------------+
-|      Peixe        |
-+--------------------+
-| - especie: String |
-| - cor: String     |
-| - tamanho: double |
-+--------------------+
-| + Peixe(String, String, double) |
-| + nadar()                       |
-| + comer()                       |
-| + exibirInfo()                  |
-+--------------------+
+![image](https://github.com/user-attachments/assets/373ead33-d88c-4ff0-ae05-b824148dd484)
 
-
-# 2 CLASSE CARROS 
-
-+----------------------+
-|        Carro        |
-+----------------------+
-| - modelo: String    |
-| - ano: int         |
-| - velocidade: double |
-+----------------------+
-| + Carro(String, int) |
-| + acelerar(double)   |
-| + frear(double)      |
-| + estacionar()       |
-| + exibirStatus()     |
-+----------------------+
-
-# 3 CLASSE PÁSSAROS
-
-+------------------------+
-|       Passaros          |
-+------------------------+
-| - especie: String       |
-| - peso: double          |
-| - cor: String           |
-+------------------------+
-| + Passaros(especie: String, peso: double, cor: String) |
-| + voar(): void          |
-| + cantar(): void        |
-| + dormir(): void        |
-| + getEspecie(): String  |
-| + setEspecie(especie: String): void |
-| + getPeso(): double     |
-| + setPeso(peso: double): void |
-| + getCor(): String      |
-| + setCor(cor: String): void |
-+------------------------+
-
-# 4 CLASSE SAPATOS 
-
-+--------------------------+
-|        Sapatos            |
-+--------------------------+
-| - tipo: String            |
-| - cor: String             |
-| - tamanho: double         |
-+--------------------------+
-| + Sapatos(tipo: String, cor: String, tamanho: double) |
-| + calçar(): void          |
-| + descalçar(): void       |
-| + mostrarDetalhes(): void |
-| + getTipo(): String       |
-| + setTipo(tipo: String): void |
-| + getCor(): String        |
-| + setCor(cor: String): void |
-| + getTamanho(): double    |
-| + setTamanho(tamanho: double): void |
-+--------------------------+
-
-# 5 CLASSE BANDEIRAS 
-
-+------------------------------+
-|          Bandeiras            |
-+------------------------------+
-| - pais: String                |
-| - corPrimaria: String         |
-| - tamanho: double             |
-+------------------------------+
-| + Bandeiras(pais: String, corPrimaria: String, tamanho: double) |
-| + hastear(): void             |
-| + baixar(): void              |
-| + exibirDetalhes(): void      |
-| + getPais(): String           |
-| + setPais(pais: String): void |
-| + getCorPrimaria(): String    |
-| + setCorPrimaria(cor: String): void |
-| + getTamanho(): double        |
-| + setTamanho(tamanho: double): void |
-+------------------------------+
-
-# 6 CLASSE BEBIDAS
-
-+---------------------------+
-|          Bebidas           |
-+---------------------------+
-| - nome: String             |
-| - volume: double           |
-| - tipo: String             |
-+---------------------------+
-| + Bebidas(nome: String, volume: double, tipo: String) |
-| + abrir(): void            |
-| + beber(): void            |
-| + exibirDetalhes(): void   |
-| + getNome(): String        |
-| + setNome(nome: String): void |
-| + getVolume(): double      |
-| + setVolume(volume: double): void |
-| + getTipo(): String        |
-| + setTipo(tipo: String): void |
-+---------------------------+
-
-# 7 CLASSE ESTAÇÔES DO ANO
-+----------------------------+
-|        EstacoesDoAno        |
-+----------------------------+
-| - nome: String              |
-| - duracaoEmDias: int        |
-| - clima: String             |
-+----------------------------+
-| + EstacoesDoAno(nome: String, duracaoEmDias: int, clima: String) |
-| + iniciar(): void           |
-| + terminar(): void          |
-| + exibirDetalhes(): void    |
-| + getNome(): String         |
-| + setNome(nome: String): void |
-| + getDuracaoEmDias(): int   |
-| + setDuracaoEmDias(duracaoEmDias: int): void |
-| + getClima(): String        |
-| + setClima(clima: String): void |
-+----------------------------+
-
-# 8 CLASSE CORES 
-
-+------------------------------+
-|            Cores              |
-+------------------------------+
-| - nome: String                |
-| - codigoHexadecimal: String   |
-| - primaria: boolean           |
-+------------------------------+
-| + Cores(nome: String, codigoHexadecimal: String, primaria: boolean) |
-| + exibirCor(): void           |
-| + verificarCorPrimaria(): void |
-| + mudarCor(novaCor: String, novoCodigoHexadecimal: String): void |
-| + getNome(): String           |
-| + setNome(nome: String): void |
-| + getCodigoHexadecimal(): String |
-| + setCodigoHexadecimal(codigoHexadecimal: String): void |
-| + isPrimaria(): boolean       |
-| + setPrimaria(primaria: boolean): void |
-+------------------------------+
-
-# 9 CLASSE REDES SOCIAIS 
-
-+----------------------------------+
-|          RacasDeCachorros        |
-+----------------------------------+
-| - nome: String                   |
-| - tamanho: String                |
-| - temperamento: String           |
-+----------------------------------+
-| + RacasDeCachorros(nome: String, tamanho: String, temperamento: String) |
-| + exibirInformacoes(): void      |
-| + alimentar(): void              |
-| + brincar(): void                |
-| + getNome(): String              |
-| + setNome(nome: String): void    |
-| + getTamanho(): String           |
-| + setTamanho(tamanho: String): void |
-| + getTemperamento(): String      |
-| + setTemperamento(temperamento: String): void |
-+----------------------------------+
-
-
-# 10 CLASSE RAÇAS DE CACHORROS
-
-+----------------------------------+
-|          RacasDeCachorros        |
-+----------------------------------+
-| - nome: String                   |
-| - tamanho: String                |
-| - temperamento: String           |
-+----------------------------------+
-| + RacasDeCachorros(nome: String, tamanho: String, temperamento: String) |
-| + exibirInformacoes(): void      |
-| + alimentar(): void              |
-| + brincar(): void                |
-| + getNome(): String              |
-| + setNome(nome: String): void    |
-| + getTamanho(): String           |
-| + setTamanho(tamanho: String): void |
-| + getTemperamento(): String      |
-| + setTemperamento(temperamento: String): void |
-+----------------------------------+
+![image](https://github.com/user-attachments/assets/32b4d286-2955-4d04-9f13-7b1dac41a73c)
 
 # exercício 3
 # 1
@@ -518,7 +323,7 @@ public class Estacao{
         System.out.println("A estação " + nome + " terminou!");
     }
 
-    public long calcularDuracao() {
+    public long calcular() {
         return ChronoUnit.DAYS.between(dataInicio, dataFim);
     }
 
@@ -555,62 +360,67 @@ public class Estacao{
         this.dataFim = dataFim;
     }
 }
+
 ```
 # 8 
 ```java
-public class Cor {
-    // Atributos
-    private String nome; 
-    private String codigoHexadecimal; 
-    private boolean primaria; 
+package org.exemplo;
 
-    //construtor
-    public Cor(String nome, String codigoHexadecimal, boolean primaria) {
-        this.nome = nome;
-        this.codigoHexadecimal = codigoHexadecimal;
-        this.primaria = primaria;
+public class Cor {
+    private String nome;
+
+    public Cor(String nome) {
+        this.nome = nome.toLowerCase();// padronizacao para caixa baixa
     }
-    // Métodos
-    public void exibirCor() {
-        System.out.println("A cor é " + nome + " e o código hexadecimal é " + codigoHexadecimal);
+
+    public boolean primaria() {
+        return nome.equals("vermelho") || nome.equals("azul") || nome.equals("amarelo");
     }
-    public void verificarCorPrimaria() {
-        if (primaria) {
-            System.out.println(nome + " é uma cor primária.");
-        } else {
-            System.out.println(nome + " não é uma cor primária.");
-        }
+
+    public boolean secundaria() {
+        return nome.equals("laranja") || nome.equals("verde") || nome.equals("roxo");
     }
-    public void mudarCor(String novaCor, String novoCodigoHexadecimal) {
-        this.nome = novaCor;
-        this.codigoHexadecimal = novoCodigoHexadecimal;
-        System.out.println("A cor foi alterada para " + nome + " com o código hexadecimal " + codigoHexadecimal);
+
+    public boolean neutra() {
+        return nome.equals("preto") || nome.equals("branco") || nome.equals("cinza");
     }
-    // Métodos Getter e Setter
+
     public String getNome() {
         return nome;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getCodigoHexadecimal() {
-        return codigoHexadecimal;
-    }
 
-    public void setCodigoHexadecimal(String codigoHexadecimal) {
-        this.codigoHexadecimal = codigoHexadecimal;
-    }
-    public boolean isPrimaria() {
-        return primaria;
-    }
-    public void setPrimaria(boolean primaria) {
-        this.primaria = primaria;
+    public void setNome(String nome) {
+        this.nome = nome.toLowerCase();
     }
 }
+
 ```
 # 9 
 ```java
-redes
+package org.exemplo;
+
+public class Rede {
+    private String nome;
+
+    public Rede(String nome) {
+        this.nome = nome;
+    }
+
+    public String adicionar() {
+        return("O usuário  " + nome + "foi adicionado");
+    }
+
+    public String remover() {
+        return("O usuário " + nome + " foi removido!");
+    }
+
+    // get o nome
+    public String getNome() {
+        return nome;
+
+    }
+}
+
 ```
 # 10
 ```java
