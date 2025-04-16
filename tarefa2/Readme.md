@@ -23,6 +23,8 @@
 # exercício 2
 ![image](https://github.com/user-attachments/assets/373ead33-d88c-4ff0-ae05-b824148dd484)
 
+![image](https://github.com/user-attachments/assets/83ac3474-52c2-4c51-ac7a-d3dd9414841f)
+
 ![image](https://github.com/user-attachments/assets/32b4d286-2955-4d04-9f13-7b1dac41a73c)
 
 # exercício 3
