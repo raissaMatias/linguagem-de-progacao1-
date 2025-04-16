@@ -20,12 +20,12 @@
 
 ![image](https://github.com/user-attachments/assets/c487223f-0cd2-44aa-a161-5496acf046bf)
 
-# exercício 2
-![image](https://github.com/user-attachments/assets/373ead33-d88c-4ff0-ae05-b824148dd484)
+# exercício 2 UML
 
 ![image](https://github.com/user-attachments/assets/83ac3474-52c2-4c51-ac7a-d3dd9414841f)
 
-![image](https://github.com/user-attachments/assets/32b4d286-2955-4d04-9f13-7b1dac41a73c)
+![image](https://github.com/user-attachments/assets/237360a7-ddb2-4799-885d-ef2de11afec6)
+
 
 # exercício 3
 # 1
